@@ -1,0 +1,166 @@
+{
+  "about": {
+    "title": "Mariano Guillaume",
+    "content": {
+      "description": {
+        "text": "Soy un desarrollador full stack con experiencia en construir aplicaciones web de alta calidad.\nHe trabajado en diferentes proyectos y etapas de desarrollo, desde la planificación y diseño\nhasta la implementación y mantenimiento, siempre buscando ofrecer soluciones eficientes\ny adaptadas a las necesidades de mis clientes. Vivo en Buenos Aires, Argentina y tengo un\nnivel de inglés avanzado C2."
+      },
+      "secondaryCta": {
+        "label": "Descargá mi CV",
+        "variant": "tertiary",
+        "url": "https://drive.google.com/file/d/1Gn7bHWsRG6RAJEQ7mBNBtcKVVDHWbKis/view?usp=share_link"
+      },
+      "cta": {
+        "label": "Contactame",
+        "variant": "primary",
+        "url": "mailto:marianguillaume.m@gmail.com"
+      }
+    }
+  },
+  "featuredProjects": {
+    "emoji": "pin",
+    "title": "Proyectos Destacados",
+    "content": {
+      "projects": {}
+    }
+  },
+  "skills": {
+    "emoji": "dart",
+    "title": "Habilidades",
+    "content": {
+      "skillCards": [
+        {
+          "title": "Front End",
+          "skills": [
+            "React",
+            "Next.js",
+            "Redux",
+            "Tailwindcss",
+            "ES6",
+            "TypeScript",
+            "styled-components"
+          ],
+          "id": "55O5iVQ3Nnw2ps1LK0X6ev"
+        },
+        {
+          "title": "Back End",
+          "skills": [
+            "Java",
+            "Spring Boot",
+            "Node",
+            "Express",
+            "MongoDB",
+            "PostgreSQL",
+            "Kotlin"
+          ],
+          "id": "6a9nZLd1FVMZcRQhYBN4My"
+        },
+        {
+          "title": "Otras herramientas",
+          "skills": [
+            "Photoshop",
+            "Illustrator",
+            "Figma",
+            "Git",
+            "npm",
+            "yarn",
+            "Postman",
+            "Jest",
+            "Cypress"
+          ],
+          "id": "1aJAZilGxe5v0PtTH0Tv1P"
+        }
+      ],
+      "skillsDescription": {
+        "text": "Aquí te presento algunas de las herramientas y tecnologías con las que he estado trabajando recientemente:"
+      }
+    }
+  },
+  "jobExperience": {
+    "emoji": "business",
+    "title": "Experiencia Laboral",
+    "content": {
+      "jobCards": [
+        {
+          "period": "Noviem. 2022 - Actualidad",
+          "company": "Upward Solutions",
+          "position": "Desarrollador Full Stack",
+          "responsabilities": "En el proyecto actual en el que trabajo como Desarrollador\nFull Stack, estoy utilizando patrones de diseño como Factory,\nSOLID y Observer junto con tecnologías como React.js y\nKotlin para garantizar un desarrollo eficiente y de alta calidad.\nAdemás, implemento Test-driven development en cada etapa\ndel proyecto y trabajo en diferentes entornos de desarrollo\npara asegurar una implementación óptima del mismo.",
+          "id": "7854MKD5I6Fs7bCORL0F9G"
+        },
+        {
+          "period": "Enero 2022 - Actualidad",
+          "company": "Freelance",
+          "position": "Desarrollador Full Stack",
+          "responsabilities": "Como Desarrollador Full Stack, aplico metodologías ágiles para\ngarantizar la eficiencia y el cumplimiento de los plazos de entrega en cada proyecto. Mi enfoque está en ofrecer soluciones\nde alta calidad y busco continuamente oportunidades para\nmejorar mis habilidades como desarrollador.",
+          "id": "5LCKDteHxrUm3uIM6rsvZY"
+        },
+        {
+          "period": "Abril 2019 - Abril 2022",
+          "company": "Freelance",
+          "position": "Diseñador Gráfico",
+          "responsabilities": "Como Diseñador Gráfico Freelance, he desarrollado habilidades\npara cumplir plazos de entrega y manejar mi tiempo eficientemente. Además, tengo experiencia trabajando con clientes y\nsatisfaciendo sus expectativas, lo que me permite ofrecer un\nservicio de calidad.",
+          "id": "1jLAjhk5t0MzDg12ScgEoa"
+        }
+      ]
+    }
+  },
+  "latestArticles": {
+    "emoji": "article",
+    "title": "Artículos Recientes",
+    "content": {
+      "articles": {}
+    }
+  },
+  "contact": {
+    "emoji": "mail",
+    "title": "Contact Me",
+    "content": {
+      "ctaContact": {
+        "text": "Who are you?"
+      },
+      "ctaContactText": {
+        "text": "The more details you include, the easier it will be for us to get back to you."
+      },
+      "contactForm": [
+        {
+          "label": "My name is",
+          "placeholder": "John Doe",
+          "name": "name",
+          "type": "text",
+          "id": "2zDxIM4a9C4X975fia4FiD"
+        },
+        {
+          "label": "My email is",
+          "placeholder": "johndoe@gmail.com",
+          "name": "email",
+          "type": "email",
+          "id": "1NHigeEep9OnwsNSyP8c7m"
+        },
+        {
+          "label": "What’s on your mind?",
+          "placeholder": "Your text here!",
+          "name": "text",
+          "type": "textarea",
+          "id": "3PFHDlrO8Ai1tHd4Jn1Q7y"
+        }
+      ],
+      "sendMail": {
+        "label": "Send",
+        "variant": "primary"
+      }
+    }
+  },
+  "seo": {
+    "id": "2705f4c4-969e-4308-961c-3185f6f263be",
+    "title": "Mariano Guillaume - Full Stack Developer",
+    "description": "Soy un desarrollador full stack con experiencia en construir aplicaciones web de alta calidad.",
+    "image": "https://images.unsplash.com/photo-1557682268-e3955ed5d83f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=282&q=80",
+    "imageAlt": "Image alt testing purposes",
+    "slug": "home",
+    "path": "home",
+    "url": "https://marianoguillaume.com",
+    "openGraphType": "website",
+    "schemaType": "AboutPage"
+  }
+}
