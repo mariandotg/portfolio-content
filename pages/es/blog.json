@@ -1,0 +1,14 @@
+{
+  "seo": {
+    "id": "2",
+    "title": "Blog - Mariano Guillaume",
+    "description": "Explora el desarrollo Fullstack web y las últimas tendencias tecnológicas en mi blog. Encuentra artículos técnicos y tutoriales sobre programación web, frameworks, herramientas esenciales y novedades en tecnología.",
+    "image": "https://images.unsplash.com/photo-1557682268-e3955ed5d83f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=282&q=80",
+    "imageAlt": "Texto alternativo para imagenes con motivos de prueba",
+    "slug": "blog",
+    "path": "blog",
+    "url": "https://marianoguillaume.com",
+    "openGraphType": "website",
+    "schemaType": "AboutPage"
+  }
+}
