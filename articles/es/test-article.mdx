@@ -2,7 +2,7 @@
 title: test es article
 image: https://images.unsplash.com/photo-1557682224-5b8590cd9ec5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVkJTIwZ3JhZGllbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80
 id: 779
-description: test es descripción (SPANISH)
+description: Para evitar etiquetas duplicadas en su `head`, puede usar la propiedad `key`, que garantizará que la etiqueta solo se represente una vez, como en el siguiente ejemplo
 imageAlt: image alt string
 slug: test-article
 path: test-article
@@ -14,4 +14,53 @@ date: 06/09/2023
 category: Frontmatter
 ---
 
-# Test article SPANISH VERSION
+Exponemos un componente integrado para agregar elementos al "encabezado" de la página:
+
+```jsx
+import Head from 'next/head';
+
+function IndexPage() {
+  return (
+    <div>
+      <Head>
+        <title>My page title</title>
+      </Head>
+      <p>Hello world!</p>
+    </div>
+  );
+}
+
+export default IndexPage;
+```
+
+Para evitar etiquetas duplicadas en su `head`, puede usar la propiedad `key`, que garantizará que la etiqueta solo se represente una vez, como en el siguiente ejemplo:
+
+```jsx
+import Head from 'next/head';
+
+function IndexPage() {
+  return (
+    <div>
+      <Head>
+        <title>My page title</title>
+        <meta property='og:title' content='My page title' key='title' />
+      </Head>
+      <Head>
+        <meta property='og:title' content='My new title' key='title' />
+      </Head>
+      <p>Hello world!</p>
+    </div>
+  );
+}
+
+export default IndexPage;
+```
+
+En este caso, solo se representa el segundo `<meta property="og:title" />`. Las "metaetiquetas" con atributos "clave" duplicados se manejan automáticamente.
+
+> El contenido de `head` se borra al desmontar el componente, así que asegúrese de que cada página defina completamente lo que necesita en `head`, sin hacer suposiciones sobre lo que agregaron otras páginas.
+
+`title`, `meta` o cualquier otro elemento (por ejemplo, `script`) deben estar contenidos como hijos **directos** del elemento `Head`,
+o envuelto en un máximo de un nivel de `<React.Fragment>` o matrices; de lo contrario, las etiquetas no se recogerán correctamente en las navegaciones del lado del cliente.
+
+> We recommend using [next/script](/docs/pages/building-your-application/optimizing/scripts) in your component instead of manually creating a `<script>` in `next/head`.
