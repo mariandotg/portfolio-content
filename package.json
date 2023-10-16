@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "node create.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
