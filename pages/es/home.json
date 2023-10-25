@@ -44,15 +44,12 @@
         },
         {
           "title": "Back End",
-          "skills": [
-            "Java",
-            "Spring Boot",
-            "Node",
-            "Express",
-            "MongoDB",
-            "PostgreSQL",
-            "Kotlin"
-          ],
+          "skills": ["Java", "Spring", "Kotlin", "Node", "Express", "Nestjs"],
+          "id": "3h9nZnw9gVMZcRQhYBN4My"
+        },
+        {
+          "title": "Bases de datos",
+          "skills": ["MongoDB", "PostgreSQL", "MySQL", "SQlite", "Redis"],
           "id": "6a9nZLd1FVMZcRQhYBN4My"
         },
         {
@@ -62,11 +59,10 @@
             "Illustrator",
             "Figma",
             "Git",
-            "npm",
-            "yarn",
             "Postman",
             "Jest",
-            "Cypress"
+            "Cypress",
+            "Vite"
           ],
           "id": "1aJAZilGxe5v0PtTH0Tv1P"
         }
