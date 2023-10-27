@@ -9,6 +9,8 @@ if (process.argv.length !== 4) {
 const folderBase = process.argv[2];
 const newFolderName = process.argv[3];
 const folderName = `${folderBase}/${newFolderName}`;
+const todaysDateRaw = new Date()
+const todaysDate = todaysDateRaw.toISOString()
 const frontmatter = `---
 title: -
 image: 
@@ -21,7 +23,7 @@ openGraphType: website
 url: https://marianoguillaume.com
 schemaType: website
 locale: es
-date: 06/09/2023
+date: ${todaysDate}
 category: Frontmatter
 ---
 
