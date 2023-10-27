@@ -81,21 +81,27 @@
           "period": "Nov. 2022 - Actualidad",
           "company": "Upward Solutions",
           "position": "Desarrollador Full Stack",
-          "responsabilities": "En el proyecto actual en el que trabajo como Desarrollador\nFull Stack, estoy utilizando patrones de diseño como Factory,\nSOLID y Observer junto con tecnologías como React.js y\nKotlin para garantizar un desarrollo eficiente y de alta calidad.\nAdemás, implemento Test-driven development en cada etapa\ndel proyecto y trabajo en diferentes entornos de desarrollo\npara asegurar una implementación óptima del mismo.",
+          "responsabilities": [
+            "En el proyecto actual en el que trabajo como Desarrollador\nFull Stack, estoy utilizando patrones de diseño como Factory,\nSOLID y Observer junto con tecnologías como React.js y\nKotlin para garantizar un desarrollo eficiente y de alta calidad.\nAdemás, implemento Test-driven development en cada etapa\ndel proyecto y trabajo en diferentes entornos de desarrollo\npara asegurar una implementación óptima del mismo."
+          ],
           "id": "7854MKD5I6Fs7bCORL0F9G"
         },
         {
           "period": "Ene. 2022 - Actualidad",
           "company": "Freelance",
           "position": "Desarrollador Full Stack",
-          "responsabilities": "Como Desarrollador Full Stack, aplico metodologías ágiles para\ngarantizar la eficiencia y el cumplimiento de los plazos de entrega en cada proyecto. Mi enfoque está en ofrecer soluciones\nde alta calidad y busco continuamente oportunidades para\nmejorar mis habilidades como desarrollador.",
+          "responsabilities": [
+            "Como Desarrollador Full Stack, aplico metodologías ágiles para\ngarantizar la eficiencia y el cumplimiento de los plazos de entrega en cada proyecto. Mi enfoque está en ofrecer soluciones\nde alta calidad y busco continuamente oportunidades para\nmejorar mis habilidades como desarrollador."
+          ],
           "id": "5LCKDteHxrUm3uIM6rsvZY"
         },
         {
           "period": "Abr. 2019 - Abr. 2022",
           "company": "Freelance",
           "position": "Diseñador Gráfico",
-          "responsabilities": "Como Diseñador Gráfico Freelance, he desarrollado habilidades\npara cumplir plazos de entrega y manejar mi tiempo eficientemente. Además, tengo experiencia trabajando con clientes y\nsatisfaciendo sus expectativas, lo que me permite ofrecer un\nservicio de calidad.",
+          "responsabilities": [
+            "Como Diseñador Gráfico Freelance, he desarrollado habilidades\npara cumplir plazos de entrega y manejar mi tiempo eficientemente. Además, tengo experiencia trabajando con clientes y\nsatisfaciendo sus expectativas, lo que me permite ofrecer un\nservicio de calidad."
+          ],
           "id": "1jLAjhk5t0MzDg12ScgEoa"
         }
       ]

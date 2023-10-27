@@ -81,21 +81,27 @@
           "period": "Nov. 2022 - Present",
           "company": "Upward Solutions",
           "position": "Full Stack Developer",
-          "responsabilities": "In the current project where I work as a Full Stack Developer,\nI am utilizing design patterns such as Factory, SOLID, and\nObserver along with technologies like React.js and Kotlin to\nensure efficient and high-quality development. Additionally,\nI implement Test-driven development at every stage of the\nproject and work in different development environments to\nensure optimal implementation of the project.",
+          "responsabilities": [
+            "In the current project where I work as a Full Stack Developer,\nI am utilizing design patterns such as Factory, SOLID, and\nObserver along with technologies like React.js and Kotlin to\nensure efficient and high-quality development. Additionally,\nI implement Test-driven development at every stage of the\nproject and work in different development environments to\nensure optimal implementation of the project."
+          ],
           "id": "7854MKD5I6Fs7bCORL0F9G"
         },
         {
           "period": "Jan. 2022 - Present",
           "company": "Freelance",
           "position": "Full Stack Developer",
-          "responsabilities": "As a Full Stack Developer, I apply agile methodologies to\nensure efficiency and timely delivery in each project. My focus\nis on providing high-quality solutions, and I continuously seek\nopportunities to improve my skills as a developer.",
+          "responsabilities": [
+            "As a Full Stack Developer, I apply agile methodologies to\nensure efficiency and timely delivery in each project. My focus\nis on providing high-quality solutions, and I continuously seek\nopportunities to improve my skills as a developer."
+          ],
           "id": "5LCKDteHxrUm3uIM6rsvZY"
         },
         {
           "period": "Apr. 2019 - Apr. 2022",
           "company": "Freelance",
           "position": "Graphic Designer",
-          "responsabilities": "As a Freelance Graphic Designer, I have developed skills to\nmeet deadlines and manage my time efficiently. In addition,\nI have experience working with clients and meeting their\nexpectations, which allows me to offer a quality service.",
+          "responsabilities": [
+            "As a Freelance Graphic Designer, I have developed skills to\nmeet deadlines and manage my time efficiently. In addition,\nI have experience working with clients and meeting their\nexpectations, which allows me to offer a quality service."
+          ],
           "id": "1jLAjhk5t0MzDg12ScgEoa"
         }
       ]
