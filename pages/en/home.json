@@ -35,9 +35,9 @@
             "React",
             "Next.js",
             "Redux",
+            "TypeScript",
             "Tailwindcss",
             "ES6",
-            "TypeScript",
             "styled-components"
           ],
           "id": "55O5iVQ3Nnw2ps1LK0X6ev"
@@ -49,19 +49,19 @@
         },
         {
           "title": "Databases",
-          "skills": ["MongoDB", "PostgreSQL", "MySQL", "SQlite", "Redis"],
+          "skills": ["MongoDB", "SQlite", "PostgreSQL", "Redis", "MySQL"],
           "id": "6a9nZLd1FVMZcRQhYBN4My"
         },
         {
           "title": "Other Tools",
           "skills": [
             "Photoshop",
-            "Illustrator",
             "Figma",
-            "Git",
-            "Postman",
+            "Illustrator",
             "Jest",
+            "Git",
             "Cypress",
+            "Postman",
             "Vite"
           ],
           "id": "1aJAZilGxe5v0PtTH0Tv1P"
