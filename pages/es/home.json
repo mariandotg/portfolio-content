@@ -31,7 +31,7 @@
       "skillCards": [
         {
           "title": "Front End",
-          "icon": "outlineCodeBracket",
+          "icon": "miniCodeBracket",
           "skills": [
             "React",
             "Next.js",
@@ -45,19 +45,19 @@
         },
         {
           "title": "Back End",
-          "icon": "solidSettings",
+          "icon": "miniSettings",
           "skills": ["Java", "Spring", "Kotlin", "Node", "Express", "Nestjs"],
           "id": "3h9nZnw9gVMZcRQhYBN4My"
         },
         {
           "title": "Bases de datos",
-          "icon": "solidCircleStack",
+          "icon": "miniCircleStack",
           "skills": ["MongoDB", "SQlite", "PostgreSQL", "Redis", "MySQL"],
           "id": "6a9nZLd1FVMZcRQhYBN4My"
         },
         {
           "title": "Otras herramientas",
-          "icon": "outlineCommandLine",
+          "icon": "miniCommandLine",
           "skills": [
             "Photoshop",
             "Figma",
