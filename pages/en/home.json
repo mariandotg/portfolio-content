@@ -87,11 +87,11 @@
           "position": "Full Stack Developer",
           "tags": ["React", "Typescript", "Kotlin", "Tailwindcss"],
           "responsabilities": [
-            "Planned and developed various UI views and features using ReactJS and styled-components, following the TDD methodology with Jest and Mockito.",
-            "Developed multiple endpoints for a REST API in Kotlin and Javalin, integrating Jooq for interaction with the PostgreSQL database.",
-            "Executed migrations of database tables in PostgreSQL using Flyway.",
-            "Applied and maintained different design patterns, such as Factory and Dependency Injection.",
-            "Implemented and conducted constant unit testing, adhering to the TDD methodology and applying agile methodologies in the development process."
+            "Plan and develop various UI views and features using ReactJS and styled-components, applying the TDD methodology with Jest and Mockito.",
+            "Develop multiple endpoints for a REST API in Kotlin and Javalin, integrating Jooq for interaction with the PostgreSQL database.",
+            "Perform migrations of database tables in PostgreSQL using Flyway.",
+            "Utilize and maintain different design patterns, such as Factory and Dependency Injection.",
+            "Implement and execute unit tests consistently, following the TDD methodology and applying agile methodologies in the development process."
           ],
           "id": "7854MKD5I6Fs7bCORL0F9G"
         },
