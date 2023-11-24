@@ -1,0 +1,20 @@
+{
+  "en": {
+    "label": "This page is a Work In Progress, contact me if you found any errors :)",
+    "href": {
+      "source": "/contact",
+      "navigation": "internal"
+    },
+    "icon": "miniWarning",
+    "variant": "warning"
+  },
+  "es": {
+    "label": "Esta página es un trabajo en progreso, contactame si encontrás algún error :)",
+    "href": {
+      "source": "/contact",
+      "navigation": "internal"
+    },
+    "icon": "miniWarning",
+    "variant": "warning"
+  }
+}
