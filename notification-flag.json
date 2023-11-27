@@ -9,7 +9,7 @@
     "variant": "warning"
   },
   "es": {
-    "label": "Esta página es un trabajo en progreso, contactame si encontrás algún error :)",
+    "label": "Esta página está en progreso, contactame si encontrás un error :)",
     "href": {
       "source": "/contact",
       "navigation": "internal"
