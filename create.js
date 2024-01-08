@@ -1,7 +1,9 @@
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');  
-const inquirer = require('inquirer');
+import fs from 'fs'
+import path from 'path'
+import chalk from 'chalk'
+import inquirer from 'inquirer'
+
+const languages = ['es', 'en'];
 
 const log = {
   success: (message) => console.log(chalk.green(message)),
@@ -10,38 +12,36 @@ const log = {
   help: (message) => console.log(chalk.violet(message)),
 };
 
-inquirer
-  .prompt([
-    /* Pass your questions in here */
-    {name: "title", message:"Write the title of the post", waitUserInput: false},
-    {name: "test", message:"Type of the post", type:"list", choices: ['article', 'project', 'page'], waitUserInput: false}
-  ])
-  .then((answers) => {
-    // Use user feedback for... whatever!!
-    console.log(answers)
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
-const argv = require('yargs/yargs')(process.argv.slice(2)).argv;
+const questions = [
+  {
+    name: "title",
+    message: "Write the title of the post",
+    waitUserInput: true
+  },
+  {
+    name: "type",
+    message: "Type of the post",
+    type: "list",
+    choices: ['article', 'project', 'page'],
+    waitUserInput: true
+  },
+  {
+    name: "slug",
+    message: "Write the slug of the post",
+    waitUserInput: true
+  },
+]
 
-const title = "a";
-const type = "y";
-const slug = "l";
-// const title = argv.t || argv.title;
-// const type = argv.T || argv.type;
-// const slug = argv.s || argv.slug;
+function createFrontmatterTemplates(answers) {
+  const title = answers.title;
+  const slug = answers.slug;
+  const todaysDateRaw = new Date()
+  const todaysDate = todaysDateRaw.toISOString()
 
-// const folderBase = process.argv[2];
-// const newFolderName = process.argv[3];
-const folderName = `${type}s/${slug}`;
-const todaysDateRaw = new Date()
-const todaysDate = todaysDateRaw.toISOString()
-const frontmatter = `---
+  const frontmatters = {};
+
+  languages.forEach((language) => {
+    frontmatters[language] = `---
 title: ${title}
 image: 
 id: 0
@@ -52,32 +52,56 @@ path: ${slug}
 openGraphType: website
 url: https://marianoguillaume.com
 schemaType: website
-locale: es
+locale: ${language}
 date: ${todaysDate}
 category: Frontmatter
 ---
 
 # ${title}
-Este es un archivo MDX de ejemplo en el idioma "es".
-`;
+Este es un archivo MDX de ejemplo en el idioma ${language}.
+    `;
+  })
 
-if (!fs.existsSync(folderName)) {
-  fs.mkdirSync(folderName, { recursive: true });
+  return frontmatters;
 }
 
-const languages = ['es', 'en'];
-languages.forEach((language) => {
-  const languageFolder = path.join(folderName, language);
-  if (!fs.existsSync(languageFolder)) {
-    fs.mkdirSync(languageFolder, { recursive: true });
+function createContentFolders(answers, frontmatterObject) {
+  const type = answers.type;
+  const slug = answers.slug;
+  const folderName = `${type}s/${slug}`;
+  
+  if (!fs.existsSync(folderName)) {
+    fs.mkdirSync(folderName, { recursive: true });
   }
+    
+  languages.forEach((language) => {
+    const languageFolder = path.join(folderName, language);
+    if (!fs.existsSync(languageFolder)) {
+      fs.mkdirSync(languageFolder, { recursive: true });
+    }
+  
+    const contentFilePath = path.join(languageFolder, 'content.mdx');
+    if (fs.existsSync(contentFilePath)) {
+      log.warn(`El archivo ${contentFilePath} ya existe.`);
+    } else {
+      const content = frontmatterObject[language];
+      fs.writeFileSync(contentFilePath, content);
+      log.success(`Archivo ${contentFilePath} creado correctamente.`);
+    }
+  });
+}
 
-  const contentFilePath = path.join(languageFolder, 'content.mdx');
-  if (fs.existsSync(contentFilePath)) {
-    console.error(`El archivo ${contentFilePath} ya existe.`);
-  } else {
-    const content = frontmatter;
-    fs.writeFileSync(contentFilePath, content);
-    console.log(`Archivo ${contentFilePath} creado correctamente.`);
-  }
-});
+inquirer
+  .prompt(questions)
+  .then((answers) => {
+    console.log(answers)
+    const frontmatterTemplates = createFrontmatterTemplates(answers);
+    createContentFolders(answers, frontmatterTemplates)
+  })
+  .catch((error) => {
+    if (error.isTtyError) {
+      log.warn(error)
+    } else {
+      log.warn(error)
+    }
+  });
