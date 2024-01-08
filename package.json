@@ -1,5 +1,6 @@
 {
   "name": "portfolio-content",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "create.js",
@@ -10,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "4.1.2",
-    "inquirer": "^8.0.0"
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12"
   }
 }
