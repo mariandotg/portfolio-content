@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import chalk from 'chalk'
 import inquirer from 'inquirer'
+import jimp from 'jimp'
 
 const languages = ['es', 'en'];
 
@@ -15,19 +16,24 @@ const log = {
 const questions = [
   {
     name: "title",
-    message: "Write the title of the post",
+    message: "Write the title of the content",
     waitUserInput: true
   },
   {
     name: "type",
-    message: "Type of the post",
+    message: "Type of the content",
     type: "list",
     choices: ['article', 'project', 'page'],
     waitUserInput: true
   },
   {
     name: "slug",
-    message: "Write the slug of the post",
+    message: "Write the slug of the content",
+    waitUserInput: true
+  },
+  {
+    name: "description",
+    message: "Write the description of the content",
     waitUserInput: true
   },
 ]
@@ -35,6 +41,7 @@ const questions = [
 function createFrontmatterTemplates(answers) {
   const title = answers.title;
   const slug = answers.slug;
+  const description = answers.description;
   const todaysDateRaw = new Date()
   const todaysDate = todaysDateRaw.toISOString()
 
@@ -45,7 +52,7 @@ function createFrontmatterTemplates(answers) {
 title: ${title}
 image: 
 id: 0
-description: -
+description: ${description}
 imageAlt: Texto alternativo de la imagen
 slug: ${slug}
 path: ${slug}
@@ -91,12 +98,67 @@ function createContentFolders(answers, frontmatterObject) {
   });
 }
 
+function createPageMetadataImage(fileName, title) {
+  jimp.read(fileName, (err, baseImage) => {
+    if (err) throw err;
+
+    let textImage = new jimp(1200, 630, 0x0, (err, textImage) => {  
+        //((0x0 = 0 = rgba(0, 0, 0, 0)) = transparent)
+        if (err) throw err;
+    })
+    jimp.loadFont('./fonts/ibm-plex-sans-pagina.fnt').then(font => {
+        textImage.print(font, 62, 433, title)
+        // textImage.color([{ apply: 'xor', params: ['#00ff00'] }]); 
+        baseImage.blit(textImage, 0, 0)
+        baseImage.write('page-metadata-image.jpg'); // save
+    });
+  });
+}
+
+function createPostMetadataImage(fileName, title, description) {
+  jimp.read(fileName, (err, baseImage) => {
+    if (err) throw err;
+
+    let textImage = new jimp(1200, 630, 0x0, (err, textImage) => {  
+        //((0x0 = 0 = rgba(0, 0, 0, 0)) = transparent)
+        if (err) throw err;
+    })
+    jimp.loadFont('./fonts/ibm-plex-sans-medium.fnt').then(font => {
+      textImage.print(font, 62, 430, description)
+      // textImage.color([{ apply: 'xor', params: ['#00ff00'] }]); 
+      baseImage.blit(textImage, 0, 0)
+      // baseImage.write('testOutput.jpg'); // save
+  });
+  jimp.loadFont('./fonts/ibm-plex-sans-titulo.fnt').then(font => {
+      textImage.print(font, 62, 350, title)
+      // textImage.color([{ apply: 'xor', params: ['#00ff00'] }]); 
+      baseImage.blit(textImage, 0, 0)
+      baseImage.write('post-metadata-image.jpg'); // save
+  });
+  });
+}
+
+function createMetadataImage(answers) {
+  const fileName = 'metadata-image-template.jpg';
+
+  const contentType = answers.type;
+  const title = answers.title;
+  const description = answers.description;
+
+  if(contentType === 'page') {
+    createPageMetadataImage(fileName, title)
+  } else {
+    createPostMetadataImage(fileName, title, description)
+  }
+}
+
 inquirer
   .prompt(questions)
   .then((answers) => {
     console.log(answers)
     const frontmatterTemplates = createFrontmatterTemplates(answers);
     createContentFolders(answers, frontmatterTemplates)
+    createMetadataImage(answers)
   })
   .catch((error) => {
     if (error.isTtyError) {
