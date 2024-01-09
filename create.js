@@ -103,14 +103,12 @@ function createPageMetadataImage(fileName, title) {
     if (err) throw err;
 
     let textImage = new jimp(1200, 630, 0x0, (err, textImage) => {  
-        //((0x0 = 0 = rgba(0, 0, 0, 0)) = transparent)
         if (err) throw err;
     })
     jimp.loadFont('./fonts/ibm-plex-sans-pagina.fnt').then(font => {
         textImage.print(font, 62, 433, title)
-        // textImage.color([{ apply: 'xor', params: ['#00ff00'] }]); 
         baseImage.blit(textImage, 0, 0)
-        baseImage.write('page-metadata-image.jpg'); // save
+        baseImage.write('page-metadata-image.jpg');
     });
   });
 }
@@ -120,20 +118,16 @@ function createPostMetadataImage(fileName, title, description) {
     if (err) throw err;
 
     let textImage = new jimp(1200, 630, 0x0, (err, textImage) => {  
-        //((0x0 = 0 = rgba(0, 0, 0, 0)) = transparent)
         if (err) throw err;
     })
     jimp.loadFont('./fonts/ibm-plex-sans-medium.fnt').then(font => {
       textImage.print(font, 62, 430, description)
-      // textImage.color([{ apply: 'xor', params: ['#00ff00'] }]); 
       baseImage.blit(textImage, 0, 0)
-      // baseImage.write('testOutput.jpg'); // save
   });
   jimp.loadFont('./fonts/ibm-plex-sans-titulo.fnt').then(font => {
       textImage.print(font, 62, 350, title)
-      // textImage.color([{ apply: 'xor', params: ['#00ff00'] }]); 
       baseImage.blit(textImage, 0, 0)
-      baseImage.write('post-metadata-image.jpg'); // save
+      baseImage.write('post-metadata-image.jpg');
   });
   });
 }
