@@ -101,7 +101,10 @@
           "position": "Full Stack Developer",
           "tags": ["React", "Typescript", "Kotlin", "Tailwindcss"],
           "responsabilities": [
-            "As a Full Stack Developer, I apply agile methodologies to\nensure efficiency and timely delivery in each project. My focus\nis on providing high-quality solutions, and I continuously seek\nopportunities to improve my skills as a developer."
+            "Develop systems in Java to keep track of shifts, using a MySQL database",
+            "Develop and maintain a blog made with React and Next.js, using a MySQL database.",
+            "Develop multiple landing pages optimized for SEO with React, Angular and Next.js.",
+            "Develop simple algorithms in Java, TypeScript and Kotlin."
           ],
           "id": "5LCKDteHxrUm3uIM6rsvZY"
         },
