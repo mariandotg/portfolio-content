@@ -34,39 +34,44 @@
           "icon": "outlineCodeBracket",
           "skills": [
             "React",
+            "Angular",
+            "CSS",
             "Next.js",
             "Redux",
-            "TypeScript",
-            "Tailwindcss",
+            "styled-components",
+            "TailwindCSS",
             "ES6",
-            "styled-components"
+            "TypeScript"
           ],
           "id": "55O5iVQ3Nnw2ps1LK0X6ev"
         },
         {
           "title": "Back End",
           "icon": "solidSettings",
-          "skills": ["Java", "Spring", "Kotlin", "Node", "Express", "Nestjs"],
+          "skills": ["Java", "SpringBoot", "Node.js", "Express.js", "Kotlin", "Nestjs"],
           "id": "3h9nZnw9gVMZcRQhYBN4My"
         },
         {
           "title": "Databases",
           "icon": "solidCircleStack",
-          "skills": ["MongoDB", "SQlite", "PostgreSQL", "Redis", "MySQL"],
+          "skills": ["MySQL", "PostgreSQL", "SQlite", "SQLServer", "Redis"],
           "id": "6a9nZLd1FVMZcRQhYBN4My"
         },
         {
           "title": "Other Tools",
           "icon": "outlineCommandLine",
           "skills": [
-            "Photoshop",
+            "Docker",
+            "Git",
+            "Maven",
+            "Vite",
+            "JUnit5",
+            "Jest",
+            "Eslint",
+            "Postman",
             "Figma",
             "Illustrator",
-            "Jest",
-            "Git",
-            "Cypress",
-            "Postman",
-            "Vite"
+            "Photoshop"
           ],
           "id": "1aJAZilGxe5v0PtTH0Tv1P"
         }
@@ -82,41 +87,50 @@
     "content": {
       "jobCards": [
         {
-          "period": "Nov. 2022 - Present",
+          "period": "Feb. 2024 - Present",
+          "company": "Stefanini",
+          "position": "Full Stack Developer",
+          "tags": ["Angular", "CSS", "Java", "SpringBoot", "SQLServer", "Activiti"],
+          "responsabilities": [
+            "Plan and develop multiple views of a dashboard using AngularJS and CSS.",
+            "Create and maintain multiple endpoints for a REST API in Java with SpringBoot accessed by up to ≈100 users simultaneously.",
+            "Develop and modify business flows for document upload and approval using Activiti BPMN.",
+            "Integrate OCR into the application to improve document reading by 100%.",
+            "Manage Production and Homologation environments for maintenance, correction of bugs and testing of new features.",
+            "Gradually migrate the FrontEnd from AngularJS to Angular 14.",
+            "Apply agile methodologies such as Kanban in product development."
+          ],
+          "id": "h367MKDYU6F4joCOR349KJ"
+        },
+        {
+          "period": "Jun. 2022 - Feb. 2024",
           "company": "Upward Solutions",
           "position": "Full Stack Developer",
-          "tags": ["React", "Typescript", "Kotlin", "Tailwindcss"],
+          "tags": ["React", "CSS", "TailwindCSS", "TypeScript", "Node.js", "Express.js", "Kotlin", "PostgreSQL", "MySQL"],
           "responsabilities": [
-            "Plan and develop various UI views and features using ReactJS and styled-components, applying the TDD methodology with Jest and Mockito.",
-            "Develop multiple endpoints for a REST API in Kotlin and Javalin, integrating Jooq for interaction with the PostgreSQL database.",
-            "Perform migrations of database tables in PostgreSQL using Flyway.",
-            "Utilize and maintain different design patterns, such as Factory and Dependency Injection.",
-            "Implement and execute unit tests consistently, following the TDD methodology and applying agile methodologies in the development process."
+            "Plan and develop various views and UI features using React and CSSModules.",
+            "Optimize pre-existing React views, improving performance and conversion rate by 40%.",
+            "Develop and maintain multiple microservices with Node.js with Express.js following Test Driven Development.",
+            "Maintain and develop several controllers for a REST API in Kotlin with Javalin, accessed by ≈700 users weekly in production.",
+            "Perform SQL database migrations (PostgreSQL and MySQL) using Flyway.",
+            "Implement unit tests to the code base, improving code coverage up to 80%.",
+            "Develop web scrapping bot with Python and Selenium to implement with different microservices.",
+            "Apply agile methodologies such as Scrum and Kanban in the product development."
           ],
           "id": "7854MKD5I6Fs7bCORL0F9G"
         },
         {
-          "period": "Jan. 2022 - Present",
+          "period": "Jan. 2021 - Feb. 2024",
           "company": "Freelance",
           "position": "Full Stack Developer",
-          "tags": ["React", "Typescript", "Kotlin", "Tailwindcss"],
+          "tags": ["React", "TypeScript", "Java", "TailwindCSS", "MySQL", "SQLite"],
           "responsabilities": [
-            "Develop systems in Java to keep track of shifts, using a MySQL database",
-            "Develop and maintain a blog made with React and Next.js, using a MySQL database.",
-            "Develop multiple landing pages optimized for SEO with React, Angular and Next.js.",
+            "Develop Java systems to keep track of shifts, using MySQL.",
+            "Develop and maintain a blog made with Next.js, using a SQLite database.",
+            "Develop multiple SEO-optimized landing pages with React, Next.js, and Angular.",
             "Develop simple algorithms in Java, TypeScript and Kotlin."
           ],
           "id": "5LCKDteHxrUm3uIM6rsvZ"
-        },
-        {
-          "period": "Apr. 2019 - Apr. 2022",
-          "company": "Freelance",
-          "position": "Graphic Designer",
-          "tags": ["React", "Typescript", "Kotlin", "Tailwindcss"],
-          "responsabilities": [
-            "As a Freelance Graphic Designer, I have developed skills to\nmeet deadlines and manage my time efficiently. In addition,\nI have experience working with clients and meeting their\nexpectations, which allows me to offer a quality service."
-          ],
-          "id": "1jLAjhk5t0MzDg12ScgEo"
         }
       ]
     }
